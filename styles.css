@@ -1,0 +1,47 @@
+/* @import url(//db.onlinewebfonts.com/c/827d075b1538829cc0db75696e4d5fa2?family=Speedee); */
+
+@font-face{font-family:'speedee';src:local('mcdfont'),url(./font/speedee-regular.woff2) format('woff2');font-weight:700;font-display:swap}
+
+:root {
+    --black-color: black;
+}
+
+body {
+    font-family: 'speedee', sans-serif;
+    /* overflow-x: hidden; */
+    font-weight: 400;
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+}
+
+.nav-links {
+    
+    margin-right: 5rem;
+    /* background-image: url(https://mcdindia.com/wp-content/uploads/2020/04/logo-symbol.svg);
+    background-repeat: no-repeat;
+    background-position-x: 3rem;
+    min-height: 10vh; */
+    display: inline-block;
+    /* text-align: right; */
+    margin-left: 35rem;
+}
+
+
+.logo-top {
+    margin: 0.5rem 0rem 0rem 5rem;
+    text-align: left;
+    background-position-x: left;
+}
+
+.link {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--black-color);
+    padding: 1rem;
+}
