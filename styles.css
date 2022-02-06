@@ -28,20 +28,23 @@ body {
     background-position-x: 3rem;
     min-height: 10vh; */
     display: inline-block;
-    /* text-align: right; */
-    margin-left: 35rem;
+    text-align: right;
+    margin-left: 31.4rem;
+    margin-top: 0.5rem
 }
 
 
 .logo-top {
-    margin: 0.5rem 0rem 0rem 5rem;
-    text-align: left;
-    background-position-x: left;
+    margin: 0.5rem 0rem 0rem 6.7rem;
+    vertical-align: bottom;
+    /* text-align: left; */
+    /* background-position-x: left; */
 }
 
 .link {
     text-decoration: none;
     background-color: transparent;
     color: var(--black-color);
-    padding: 1rem;
+    padding: 0rem 1rem;
+    font-size: large;
 }
