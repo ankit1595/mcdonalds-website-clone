@@ -4,6 +4,9 @@
 
 :root {
     --black-color: black;
+    --mcd-red-color:#db0007;
+    box-sizing: border-box;
+    margin: 0px;
 }
 
 body {
@@ -12,6 +15,10 @@ body {
     font-weight: 400;
 }
 
+nav{
+    position: fixed;
+    background-color: white;
+}
 .list-non-bullet {
     list-style: none;
 }
@@ -29,14 +36,14 @@ body {
     min-height: 10vh; */
     display: inline-block;
     text-align: right;
-    margin-left: 31.4rem;
+    margin-left: 29.4rem;
     margin-top: 0.5rem
 }
 
 
 .logo-top {
-    margin: 0.5rem 0rem 0rem 6.7rem;
-    vertical-align: bottom;
+    margin: 1rem 0rem 1rem 6.7rem;
+    vertical-align:middle;
     /* text-align: left; */
     /* background-position-x: left; */
 }
@@ -45,6 +52,18 @@ body {
     text-decoration: none;
     background-color: transparent;
     color: var(--black-color);
-    padding: 0rem 1rem;
-    font-size: large;
+    padding: 0.3rem 0px;
+    margin: 0px 17px;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+.link:hover{
+    border-bottom: var(--mcd-red-color) 2px solid;
+}
+.link:visited{
+    border-bottom: var(--mcd-red-color) 3px solid;
+}
+
+.hero-heading{
+
 }
