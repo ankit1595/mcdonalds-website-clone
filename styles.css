@@ -2,11 +2,13 @@
 
 @font-face{font-family:'speedee';src:local('mcdfont'),url(./font/speedee-regular.woff2) format('woff2');font-weight:700;font-display:swap}
 
-:root {
+/* ||GENERAL STYLES */
+*{
     --black-color: black;
     --mcd-red-color:#db0007;
     box-sizing: border-box;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -16,9 +18,14 @@ body {
 }
 
 nav{
-    position: fixed;
+    position: relative;
     background-color: white;
+    width: 100%;
+    /* temporary border just for reference */
+    border: #db0007 1px solid;  
 }
+
+/* ||UTILITIES */
 .list-non-bullet {
     list-style: none;
 }
@@ -27,6 +34,7 @@ nav{
     display: inline;
 }
 
+/* ||HEADER AND MAIN NAVIGATION */
 .nav-links {
     
     margin-right: 5rem;
@@ -35,11 +43,9 @@ nav{
     background-position-x: 3rem;
     min-height: 10vh; */
     display: inline-block;
-    text-align: right;
     margin-left: 29.4rem;
     margin-top: 0.5rem
 }
-
 
 .logo-top {
     margin: 1rem 0rem 1rem 6.7rem;
@@ -60,10 +66,22 @@ nav{
 .link:hover{
     border-bottom: var(--mcd-red-color) 2px solid;
 }
-.link:visited{
-    border-bottom: var(--mcd-red-color) 3px solid;
-}
+
+
+/* || HEADER - HERO */
 
 .hero-heading{
+    float: left;
+    font-weight: bolder;
+}
 
+.hero-img{
+    height: 50vh;
+    width: 50%;
+    float: right;
+    background-image: url(./images/img-makhani-burger-2.jpg);
+    background-size: contain;
+    background-repeat:no-repeat;
+    border: solid 1px var(--mcd-red-color);
+    background-position: center;
 }
