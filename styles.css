@@ -1,11 +1,18 @@
 /* @import url(//db.onlinewebfonts.com/c/827d075b1538829cc0db75696e4d5fa2?family=Speedee); */
 
-@font-face{font-family:'speedee';src:local('mcdfont'),url(./font/speedee-regular.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{
+    font-family:'speedee';
+    src:local('mcdfont'),url(./font/speedee-regular.woff2) format('woff2');
+    font-weight:700;
+    font-display:swap
+}
 
 /* ||GENERAL STYLES */
 *{
     --black-color: black;
     --mcd-red-color:#db0007;
+    --yellow-color:#FFC72C;
+    --red-color:#DA291C;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,14 +22,17 @@ body {
     font-family: 'speedee', sans-serif;
     /* overflow-x: hidden; */
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
     position: relative;
-    background-color: white;
+    /* background-color: white; */
     width: 100%;
+    z-index: 1;
     /* temporary border just for reference */
-    border: #db0007 1px solid;  
+    /* border: #db0007 1px solid;   */
 }
 
 /* ||UTILITIES */
@@ -50,6 +60,8 @@ nav{
 .logo-top {
     margin: 1rem 0rem 1rem 6.7rem;
     vertical-align:middle;
+    background-color: red;
+    padding: 5px;
     /* text-align: left; */
     /* background-position-x: left; */
 }
@@ -70,18 +82,48 @@ nav{
 
 /* || HEADER - HERO */
 
-.hero-heading{
-    float: left;
-    font-weight: bolder;
+.hero{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    top: 0;
+    /* justify-content: space-between; */
+}
+
+.heading-hero{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    font-weight:bolder;
+    width: 50vw;
+    /* height: 50vh  ; */
+    border: 1px dotted red;
+    background-color: var(--yellow-color);
+    flex-direction: column;
+    /* position: absolute; */
+}
+
+.heading-hero span{
+    font-weight: 700;
 }
 
 .hero-img{
-    height: 50vh;
-    width: 50%;
-    float: right;
+    /* height: 50vh; */
+    width: 50vw;
+    /* float: right; */
     background-image: url(./images/img-makhani-burger-2.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat:no-repeat;
     border: solid 1px var(--mcd-red-color);
     background-position: center;
+}
+
+button{
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.meals{
+    display: block;
 }
